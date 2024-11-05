@@ -12,7 +12,6 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains import ConversationalRetrievalChain
 
-load_dotenv()
 
 # Load environment variables
 load_dotenv()
