@@ -15,7 +15,7 @@ from langchain.chains import ConversationalRetrievalChain
 
 # Load environment variables
 load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY") or st.text_input('Enter your OpenAI API key:', type='password')
+api_key = os.getenv("OPENAI_API_KEY") or st.sidebar.text_input('Enter your OpenAI API key:', type='password')
 
 # Initialize chat model
 chat = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key=api_key)
